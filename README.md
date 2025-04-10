@@ -63,32 +63,8 @@ int main() {
     }
     return 0;
 }
-```
-
-                x++;
-            }
-        }
-    }
-    getchar();
-    printf("\nThe symbol to be searched: ");
-    srch = getchar();
-    for (i = 0; i < x; i++) {
-        if (srch == d[i]) {
-            printf("Symbol Found\n");
-            printf("%c@address %p\n", srch, add[i]);
-            flag = 1;
-            break;
-        }
-    }
-    if (flag == 0) {
-        printf("Symbol Not Found\n");
-    }
-    for (i = 0; i < x; i++) {
-        free(add[i]);
-    }
-    return 0;
-}
-'
+```         
+          
 # OUTPUT
 ![Screenshot 2025-04-10 102810](https://github.com/user-attachments/assets/1a4fc37a-6fd8-465e-a518-836eecb21c9f)
 
